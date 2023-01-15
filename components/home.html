@@ -1,0 +1,159 @@
+<!-- menu -->
+<div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__links">
+      <li class="menu__link"><a href="https://www.google.com/">Início</a></li>
+      <li class="menu__link"><a href="https://www.google.com/">Cardápio</a></li>
+      <li class="menu__link"><a href="https://www.google.com/">Galeria</a></li>
+      <li class="menu__link"><a href="https://www.google.com/">Contato</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<!-- home -->
+<div class="home">
+  <div class="home__restaurant-section">
+    <img src="../images/kabayaki.png" alt="logo">
+    <h1><a href="./home.html">ZERO FOX</a></h1>
+    <p>BAR ARTESANAL - COZINHA<br>COREANA & JAPONESA</p>
+  </div>
+</div>
+<style>
+  @import '../css/index.css';
+
+  .home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home__restaurant-section {
+    background-color: rgb(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+  }
+
+  .home__restaurant-section p,
+  h1 {
+    color: var(--color-secondary);
+  }
+
+  .home__restaurant-section h1{
+    font-family: var(--font-primary);
+  }
+
+  .home__restaurant-section p{
+    font-family: var(--font-secondary);
+  }
+
+  /* media query da home */
+  @media (max-width: 480px){
+    .home{
+      background-image: url(../images/background-mobile1.jpg);
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px){
+    .home{
+      background-image: url(../images/background-tablet1.jpg);
+    }
+  }
+
+  @media (min-width: 1025px){
+    .home{
+      background-image: url(../images/background-desktop.jpg);
+    }
+  }
+
+
+
+/* menu */
+  .menu {
+  align-items: center;
+  background: var(--color-primary);
+  border-bottom: 2px solid var(--color-secondary);
+  display: flex;
+  left: 0;
+  padding: 0 16px;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 32px);
+}
+
+.menu__nav {
+  height: 56px;
+  width: 100%;
+}
+
+.menu__links {
+  display: flex;
+  gap: 6px;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu__link {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu__link a {
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-secondary);
+  flex: 1;
+  font-family: var(--font-primary);
+  font-weight: 300;
+  transition: border-bottom .3s;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.menu__link a:focus {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.menu__link a:hover {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+/* media query menu */
+@media (min-width: 480px) and (max-width: 768px) {
+  .menu__link a {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menu__link a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .menu__link a {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .menu__link a {
+    font-size: 24px;
+  }
+}
+</style>
