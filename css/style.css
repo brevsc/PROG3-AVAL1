@@ -4,6 +4,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 🏠 PÁGINA INICIAL 🏠 -------------------------------------------------------------------------- */
+
 .home {
   width: 100vw;
   height: 100vh;
@@ -573,5 +575,210 @@ footer{
   .footer__row__col{
     width: 50%;
     margin-bottom: 30px;
+  }
+}
+
+/* 📖 PÁGINA CARDÁPIO 📖  -------------------------------------------------------------------------- */
+
+.food-menu {
+  align-items: center;
+  background: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 58px;
+  width: calc(100% - 32px);
+  padding: 32px 16px;
+}
+
+.food-menu__categories {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.food-menu__title {
+  font-family: var(--font-primary);
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.food-menu__note {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--color-quaternary);
+  margin-top: 16px;
+}
+
+.food-menu__list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.food_menu__head {
+  border-bottom: 2px solid var(--color-primary);
+  border-top: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 32px;  
+  width: 100%;
+}
+
+.food-menu__items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.food-menu__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.food-menu__item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.food-menu__separator {
+  background-color: var(--color-primary);
+  border-bottom: 2px dotted;
+  margin: 0 16px;
+  width: calc(100% - 32px);
+}
+
+.food-menu__name {
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  font-weight: 600; 
+}
+
+.food-menu__price {
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 600; 
+}
+
+.food-menu__ingredients {
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .food-menu__title {
+    font-size: 24px;
+  }
+
+  .food-menu__note {
+    font-size: 17px;
+  }
+
+  .food_menu__head  {
+    font-size: 22px;
+  }
+
+  .food-menu__name {
+    font-size: 19px;
+  }
+
+  .food-menu__price, .food-menu__ingredients {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .food-menu {
+    padding: 32px;
+    width: calc(100% - 64px);
+  }
+
+  .food-menu__title {
+    font-size: 26px;
+  }
+
+  .food-menu__note {
+    font-size: 19px;
+  }
+
+  .food_menu__head  {
+    font-size: 24px;
+  }
+
+  .food-menu__name {
+    font-size: 21px;
+  }
+
+  .food-menu__price, .food-menu__ingredients {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .food-menu {
+    padding: 32px 64px;
+    width: calc(100% - 128px);
+  }
+
+  .food-menu__title {
+    font-size: 28px;
+  }
+
+  .food-menu__note {
+    font-size: 21px;
+  }
+
+  .food_menu__head  {
+    font-size: 26px;
+  }
+
+  .food-menu__name {
+    font-size: 23px;
+  }
+
+  .food-menu__price, .food-menu__ingredients {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .food-menu__title {
+    font-size: 32px;
+  }
+
+  .food-menu__note {
+    font-size: 23px;
+  }
+
+  .food_menu__head  {
+    font-size: 28px;
+  }
+
+  .food-menu__name {
+    font-size: 25px;
+  }
+
+  .food-menu__price, .food-menu__ingredients {
+    font-size: 22px;
+  }
+
+  .food-menu {
+    padding: 32px 80px;
+    width: calc(100% - 160px);
   }
 }
