@@ -20,10 +20,10 @@
     <div class="menu">
       <nav class="menu__nav">
         <ul class="menu__links">
-          <li class="menu__link"><a href="https://www.google.com/">Início</a></li>
-          <li class="menu__link"><a href="https://www.google.com/">Cardápio</a></li>
-          <li class="menu__link"><a href="https://www.google.com/">Galeria</a></li>
-          <li class="menu__link"><a href="https://www.google.com/">Contato</a></li>
+          <li class="menu__link"><a href="#top">Início</a></li>
+          <li class="menu__link"><a href="#pratos-e-bebidas">Pratos e bebidas</a></li>
+          <li class="menu__link"><a href="#galeria">Galeria</a></li>
+          <li class="menu__link"><a href="../food-menu.html">Cardápio</a></li>
         </ul>
       </nav>
     </div>
@@ -31,7 +31,7 @@
   </header>
 
   <main>
-    <section class="eat-and-drink">
+    <section id="pratos-e-bebidas" class="eat-and-drink">
       <h2 class="eat-and-drink__title">Pratos e bebidas</h2>
       <div class="eat-and-drink__underline"></div>
       <div class="eat-and-drink__guide">
@@ -66,6 +66,105 @@
         </div>
       </div>
     </section>
+    <section id="galeria" class="gallery">
+      <div class="gallery__title">Galeria</div>
+      <div class="gallery__underline"></div>
+      <div class="gallery__slider-wrapper">
+        <div class="gallery__slider">
+          <div class="gallery__slides">
+            <div id="slides__1" class="slide">
+              <img class="slide__image" src="../images/korean-bar.jpg"/>
+            </div>
+            <div id="slides__2" class="slide">
+              <img class="slide__image" src="../images/background-mobile.jpg"/>
+            </div>
+            <div id="slides__3" class="slide">
+              <img class="slide__image" src="../images/korean-plate.jpg"/>
+            </div>
+            <div id="slides__4" class="slide">
+              <img class="slide__image" src="../images/korean-table.jpg"/>
+            </div>
+            <div id="slides__5" class="slide">
+              <img class="slide__image" src="../images/korean-clients.jpg"/>
+            </div>
+          </div>
+          <div class="gallery__nav">
+            <a class="gallery__link" href="#slides__1" tabindex="0"></a>
+            <a class="gallery__link" href="#slides__2" tabindex="0"></a>
+            <a class="gallery__link" href="#slides__3" tabindex="0"></a>
+            <a class="gallery__link" href="#slides__4" tabindex="0"></a>
+            <a class="gallery__link" href="#slides__5" tabindex="0"></a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__pics">
+        <a class="gallery_view" href="../images/background-mobile.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/background-mobile.jpg">
+        </a>
+        <a class="gallery_view" href="../images/food-1.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/food-1.jpg">
+        </a>
+        <a class="gallery_view" href="../images/korean-bar.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/korean-bar.jpg">
+        </a>
+        <a class="gallery_view" href="../images/food-2.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/food-2.jpg">
+        </a>
+        <a class="gallery_view" href="../images/korean-clients.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/korean-clients.jpg">
+        </a>
+        <a class="gallery_view" href="../images/food-3.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/food-3.jpg">
+        </a>
+        <a class="gallery_view" href="../images/korean-plate.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/korean-plate.jpg">
+        </a>
+        <a class="gallery_view" href="../images/food-4.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/food-4.jpg">
+        </a>
+        <a class="gallery_view" href="../images/korean-table.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/korean-table.jpg">
+        </a>
+        <a class="gallery_view" href="../images/korean-bar.jpg" target="_blank" tabindex="0">
+          <img class="gallery__photo" src="../images/korean-bar.jpg">
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer__row">
+          <div class="footer__row__col">
+            <h4>Zero Fox</h4>
+            <ul>
+              <li><a href="">Quem somos</a></li>
+              <li><a href="">Endereço</a></li>
+              <li><a href="">Politica de Privacidade</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer__row__col">
+            <h4>Obter Ajuda</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Status de Pedido</a></li>
+              <li><a href="">Devoluções</a></li>
+              <li><a href="">Opções de Pagamento</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer__row__col">
+            <h4>Contato</h4>
+            <div class="footer__row__col__social-media">
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </footer>
   </main>
 </body>
 </html>
